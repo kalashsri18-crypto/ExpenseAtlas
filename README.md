@@ -48,8 +48,8 @@ Track your spending, manage category budgets, and understand where your money go
 ### Installation
 
 ```bash
-git clone https://github.com/kalashsri18-crypto/Kalash-1.git
-cd Kalash-1
+git clone https://github.com/kalashsri18-crypto/ExpenseAtlas.git
+cd ExpenseAtlas
 
 python -m venv .venv
 
