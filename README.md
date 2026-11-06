@@ -1,20 +1,18 @@
 # ExpenseAtlas
 
-A practical personal-finance tracker for recording expenses, setting monthly budgets, reviewing category totals, and exporting transactions.
+ExpenseAtlas is a focused, self-hostable application for a practical everyday workflow.
 
-## Status
+## Features
 
-Initial project scaffold. The application, tests, setup guide, and usage documentation are being added directly to the `main` branch.
+- Record and delete expenses with validated amount, category and date
+- Set per-category monthly budgets and inspect remaining budget
+- View month/category totals and export CSV
 
-## Planned stack
+## Stack
 
-- Python 3.10+
-- Flask
-- SQLite (built-in Python database driver)
-- HTML, CSS, and vanilla JavaScript
-- pytest
+Python 3.10+, Flask, SQLite, HTML/CSS/vanilla JavaScript, pytest.
 
-## Run locally
+## Setup
 
 ```bash
 python -m venv .venv
@@ -24,13 +22,19 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Then open http://127.0.0.1:5000.
+Open http://127.0.0.1:5000.
 
 ## Tests
 
 ```bash
 pytest
 ```
+
+Set `DATABASE` to choose a SQLite file path. The default database is created automatically. No paid API or external service is required.
+
+## API
+
+JSON endpoints are documented by their route names in `app.py`. Invalid input returns a JSON error and appropriate HTTP status code.
 
 ## License
 
